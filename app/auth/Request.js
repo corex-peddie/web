@@ -1,13 +1,16 @@
+/*
+Whaat! A Fake Request?? Nope, that just means that we aren't storing it in a database!! As this is all decentralized, nothing will actually be stored, but just remembered (if that makes sense) - Rajan
+*/
+
 import server from './Server'
 
 server.init()
 
 const fakeRequest = {
-  /**
-  * Pretends to post to a remote server
-  * @param  {string}  endpoint The endpoint of the server that should be contacted
-  * @param  {?object} data     The data that should be transferred to the server
-  */
+
+  @param  {string}  endpoint
+  @param  {?object} data 
+
   post (endpoint, data) {
     switch (endpoint) {
       case '/login':
