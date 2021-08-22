@@ -1,3 +1,7 @@
+/*
+Essentially, this is the login page. All credentials will be stored and you can only log in after registering (or just use the demo lol) - Rajan
+*/
+
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import Form from './common/Form'
@@ -38,12 +42,10 @@ Login.propTypes = {
   dispatch: React.PropTypes.func
 }
 
-// Which props do we want to inject, given the global state?
 function select (state) {
   return {
     data: state
   }
 }
 
-// Wrap the component to inject dispatch and state into it
 export default connect(select)(Login)
