@@ -1,3 +1,7 @@
+/*
+This is the main hub for the entire projects! Routing, functions and states- oh my! 
+*/
+
 import 'babel-polyfill'
 
 import React, {Component} from 'react'
