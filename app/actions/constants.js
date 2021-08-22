@@ -1,6 +1,5 @@
 /*
- * These are the variables that determine what our central data store (`../reducers/index.js`)
- * changes in our state.
+This page is for creating basic constants to be used around the entire app! Nothing too special here ;P - Rajan
  */
 
 export const CHANGE_FORM = 'CHANGE_FORM'
