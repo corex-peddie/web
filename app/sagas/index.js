@@ -1,3 +1,7 @@
+/*
+Making sure you stay logged in every time!! - Rajan
+*/
+
 import {hashSync} from 'bcryptjs'
 import genSalt from '../auth/salt'
 import {browserHistory} from 'react-router'
@@ -14,12 +18,6 @@ import {
   REQUEST_ERROR
 } from '../actions/constants'
 
-/**
- * @param  {string} username              
- * @param  {string} password              
- * @param  {object} options                
- * @param  {boolean} options.isRegistering 
- */
 export function * authorize ({username, password, isRegistering}) {
   yield put({type: SENDING_REQUEST, sending: true})
 
@@ -71,9 +69,9 @@ export function * loginFlow () {
       logout: take(LOGOUT)
     })
     if (winner.auth) {
-      yield put({type: SET_AUTH, newAuthState: true}) // User is logged in (authorized)
-      yield put({type: CHANGE_FORM, newFormState: {username: '', password: ''}}) // Clear form
-      forwardTo('/dashboard') // Go to dashboard page
+      yield put({type: SET_AUTH, newAuthState: true}) 
+      yield put({type: CHANGE_FORM, newFormState: {username: '', password: ''}}) 
+      forwardTo('/dashboard') 
     }
   }
 }
@@ -90,34 +88,26 @@ export function * logoutFlow () {
 
 export function * registerFlow () {
   while (true) {
-    // We always listen to `REGISTER_REQUEST` actions
+ 
     const request = yield take(REGISTER_REQUEST)
     const {username, password} = request.data
 
-    // We call the `authorize` task with the data, telling it that we are registering a user
-    // This returns `true` if the registering was successful, `false` if not
     const wasSuccessful = yield call(authorize, {username, password, isRegistering: true})
 
-    // If we could register a user, we send the appropiate actions
     if (wasSuccessful) {
-      yield put({type: SET_AUTH, newAuthState: true}) // User is logged in (authorized) after being registered
-      yield put({type: CHANGE_FORM, newFormState: {username: '', password: ''}}) // Clear form
-      forwardTo('/dashboard') // Go to dashboard page
+      yield put({type: SET_AUTH, newAuthState: true}) 
+      yield put({type: CHANGE_FORM, newFormState: {username: '', password: ''}})
+      forwardTo('/dashboard') 
     }
   }
 }
 
-// The root saga is what we actually send to Redux's middleware. In here we fork
-// each saga so that they are all "active" and listening.
-// Sagas are fired once at the start of an app and can be thought of as processes running
-// in the background, watching actions dispatched to the store.
 export default function * root () {
   yield fork(loginFlow)
   yield fork(logoutFlow)
   yield fork(registerFlow)
 }
 
-// Little helper function to abstract going to different pages
 function forwardTo (location) {
   browserHistory.push(location)
 }
