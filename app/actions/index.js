@@ -1,3 +1,7 @@
+/* 
+Now that we have the different constants, they need to go somewhere! This creates either a newFormState, or just exports the function :0 - Rajan
+*/
+
 
 import {
   CHANGE_FORM,
