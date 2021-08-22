@@ -1,5 +1,5 @@
 /*
-Ahhhh, the home page! The first thing you see, and well, its a beaut!
+Ahhhh, the home page! The first thing you see, and well, its a beaut! - Rajan
 */
 
 import React, {Component} from 'react'
