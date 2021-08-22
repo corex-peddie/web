@@ -1,3 +1,7 @@
+/*
+The powerforce of our frontend. OOOOHH AHHHH
+*/
+
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import Nav from './common/Nav'
