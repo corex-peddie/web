@@ -1,3 +1,7 @@
+/*
+A reducer is a function that determines changes to an application's state! This is where the constants come in handy ;P - Rajan
+*/
+
 import {
   CHANGE_FORM,
   SET_AUTH,
