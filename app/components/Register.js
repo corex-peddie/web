@@ -1,3 +1,7 @@
+/*
+As the title of this page implies, this is the main component for the register page!!
+*/
+
 import React, {Component} from 'react'
 import {connect} from 'react-redux'
 import Form from './common/Form'
@@ -31,12 +35,6 @@ class Register extends Component {
     this.props.dispatch(registerRequest({username, password}))
   }
 }
-{/*
-Register.propTypes = {
-  data: React.PropTypes.object,
-  history: React.PropTypes.object,
-  dispatch: React.PropTypes.func
-}*/}
 
 function select (state) {
   return {
