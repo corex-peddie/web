@@ -2,7 +2,40 @@
     padding: 0 !important;
     padding-left: 0 !important;
     margin-left: 0 !important;
-    width: 100%;
+    width: 110% !important;
+    height: 110% !important;
+    margin-left: -42.5% !important;
+}
+
+.presentation {
+    padding: 0 !important;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    width: 100% !important;
     height: 100% !important;
     margin-left: -36% !important;
+}
+
+.crud {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    padding-top: 140px !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin-left: -36% !important;
+}
+
+
+ul {
+    line-height: 25px;
+}
+
+code {
+    color: black !important;
+}
+
+Iframe {
+    padding: 0 !important;
+    margin-top: -100px;
+    border: 1px transparent;
 }
