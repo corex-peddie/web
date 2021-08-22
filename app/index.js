@@ -20,6 +20,9 @@ import Register from './components/Register'
 import Dashboard from './components/Dashboard'
 import NotFound from './components/NotFound'
 import Analysis from './components/Analysis'
+import Present from './components/Present'
+import Publish from './components/Publish'
+import XDB from './components/XDB'
 
 const logger = createLogger({
 
@@ -72,6 +75,9 @@ class LoginFlow extends Component {
               <Route path='/register' component={Register} />
               <Route path='/dashboard' component={Dashboard} />
               <Route path='/analysis' component={Analysis} />
+              <Route path='/present' component={Present} />
+              <Route path='/publish' component={Publish} />
+              <Route path='/xdb' component={XDB} />
             </Route>
             <Route path='*' component={NotFound} />
           </Route>
