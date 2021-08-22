@@ -1,5 +1,5 @@
 /*
-Ah yes, the one and only 404 page :partyparrot:
+Ah yes, the one and only 404 page :partyparrot: - Rajan
 */
 
 import React, {Component} from 'react'
