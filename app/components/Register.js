@@ -1,5 +1,5 @@
 /*
-As the title of this page implies, this is the main component for the register page!!
+As the title of this page implies, this is the main component for the register page!! - Rajan
 */
 
 import React, {Component} from 'react'
