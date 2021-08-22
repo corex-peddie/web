@@ -49,11 +49,5 @@ class Nav extends Component {
     this.props.dispatch(clearError())
   }
 }
-{/*
-Nav.propTypes = {
-  loggedIn: React.PropTypes.bool,
-  currentlySending: React.PropTypes.bool,
-  dispatch: React.PropTypes.func
-}*/}
 
 export default Nav
