@@ -1,3 +1,7 @@
+/*
+Ah yes, the one and only 404 page :partyparrot:
+*/
+
 import React, {Component} from 'react'
 import {Link} from 'react-router'
 
