@@ -34,10 +34,6 @@ const sagaMiddleware = createSagaMiddleware()
 const store = createStore(reducer, applyMiddleware(logger, sagaMiddleware))
 sagaMiddleware.run(rootSaga)
 
-/**
-* @param  {object}   nextState The state we want to change into when we change routes
-* @param  {function} replace Function provided by React Router to replace the location
-*/
 function checkAuth (nextState, replace) {
   const {loggedIn} = store.getState()
 
