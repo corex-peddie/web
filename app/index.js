@@ -1,5 +1,5 @@
 /*
-This is the main hub for the entire projects! Routing, functions and states- oh my! 
+This is the main hub for the entire project! Routing, functions and states- oh my! 
 */
 
 import 'babel-polyfill'
