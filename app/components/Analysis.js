@@ -1,3 +1,7 @@
+/*
+Externally hosted from Github (/corex-peddie/machine-learning) to Streamlit, embedded into the web app seamlessly! - Rajan
+*/
+
 import React from 'react';
 import Iframe from 'react-iframe';
 import './components.css';
